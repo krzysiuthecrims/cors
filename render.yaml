@@ -2,7 +2,7 @@ services:
   - name: cors-proxy                 # appears in the Render dash & URL
     type: web                        # incoming HTTP traffic
     runtime: node                    # uses Render’s Node LTS image
-    branch: main                     # auto‑deploy on pushes to main
+    branch: master                     # auto‑deploy on pushes to main
     plan: free                       # 512 MB RAM & 100 s request timeout
     buildCommand: npm ci             # faster, reproducible installs
     startCommand: node server.js     # server.js already honors $PORT
