@@ -8,9 +8,5 @@ services:
     startCommand: node server.js     # server.js already honors $PORT
     healthCheckPath: /               # optional; proxy home page returns 200
     envVars:                         # ⇣ everything here becomes process.env
-      - key: CORSANYWHERE_WHITELIST
-        value: https://pl.escort.club
-      - key: CORSANYWHERE_RATELIMIT
-        value: "600 10 pl.escort.club"
       - key: NODE_ENV                # always good practice
         value: production
